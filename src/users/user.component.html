@@ -1,0 +1,35 @@
+<div class="user-info">
+  <p style="text-decoration: underline;">User List</p>
+  <div *ngIf="userLists.length === 0">
+    <p>user list is empty</p>
+  </div>
+  <div *ngFor="let user of userLists" class="user-container">
+    <p>
+      {{ user.id }} - {{ user.name }} is {{ user.age }} year(s) old
+    </p>
+    <button 
+        class="btn-user-remove" 
+        (click)="removeUser.emit(user.id)">
+        Remove
+    </button>
+  </div>
+  <div class="user-data">
+    <div class="add-user">
+      <input 
+        class="user-name-input" 
+        type="text" 
+        (change)="setNewUserName($event)" 
+        placeholder="Enter name"
+        [value]="newUserName"
+      >
+    </div>
+    <div>
+      <button 
+        class="btn-add-user" 
+        (click)="addUser()"
+      >
+        Add User
+      </button>
+    </div>
+  </div>
+</div>
