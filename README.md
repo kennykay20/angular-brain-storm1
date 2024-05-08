@@ -1,5 +1,5 @@
 # MyFirstProject
-Use this to brainstorm my angualar mind, I did angular 3 to 4 years ago, in my former company, when i work as a fullstack developer, with C# and asp.net for the server backend and Angular for my front-end projects.
+Use this to brainstorm my angualar mind, I did angular 3 to 4 years ago, at my former company (IETech), then I work as a full-stack developer, with C# and asp.net for my server backend apps and Angular for my front-end apps.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.13.
 
